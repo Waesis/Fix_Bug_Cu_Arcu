@@ -1,2 +1,3 @@
-# Fix_Bug_Cu_Arcu
+# ENABLE_FIX_BOW_EXPLOIT
 
+Changed only define ENABLE_FIX_BOW_EXPLOIT
