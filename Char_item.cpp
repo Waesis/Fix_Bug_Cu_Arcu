@@ -1,11 +1,11 @@
 Search : if (Cell.IsEquipPosition() && !CanUnequipNow(item))
 
 Add :
-#ifdef Fix_bug_arc
+#ifdef ENABLE_FIX_BOW_EXPLOIT
 
-	if (GetWear(WEAR_WEAPON) && GetQuestFlag("timer_skill_ninja") && get_global_time() < GetQuestFlag("timer_skill_ninja"))
+	if (GetWear(WEAR_WEAPON) && GetQuestFlag("stop_spam_with_skill") && get_global_time() < GetQuestFlag("stop_spam_with_skill"))
 	{
-		ChatInfoTrans(("In %d secunde poti dezechipa arma."), (GetQuestFlag("timer_skill_ninja") - get_global_time()) % 60);
+		ChatInfoTrans(("In %d secunde poti dezechipa arma."), (GetQuestFlag("stop_spam_with_skill") - get_global_time()) % 60);
 		return false;
 	}
 #endif 
@@ -17,10 +17,10 @@ Search:
 		return false;
 
 Add :
-#ifdef Fix_bug_arc
-	 if (GetWear(WEAR_WEAPON) && GetQuestFlag("timer_skill_ninja") && get_global_time() < GetQuestFlag("timer_skill_ninja"))
+#ifdef ENABLE_FIX_BOW_EXPLOIT
+	 if (GetWear(WEAR_WEAPON) && GetQuestFlag("stop_spam_with_skill") && get_global_time() < GetQuestFlag("stop_spam_with_skill"))
 	 {
-		ChatInfoTrans(("In %d secunde poti dezechipa arma."), (GetQuestFlag("timer_skill_ninja") - get_global_time()) % 60);
+		ChatInfoTrans(("In %d secunde poti dezechipa arma."), (GetQuestFlag("stop_spam_with_skill") - get_global_time()) % 60);
 		return false;
 	 }
 	
