@@ -1,1 +1,1 @@
-#define Fix_bug_arc
+#define ENABLE_FIX_BOW_EXPLOIT
