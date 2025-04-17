@@ -5,7 +5,7 @@ Add :
 
 	if (GetWear(WEAR_WEAPON) && GetQuestFlag("stop_spam_with_skill") && get_global_time() < GetQuestFlag("stop_spam_with_skill"))
 	{
-		ChatInfoTrans(("In %d secunde poti dezechipa arma."), (GetQuestFlag("stop_spam_with_skill") - get_global_time()) % 60);
+		ChatInfoTrans(("In %d sec you will can unequip your items."), (GetQuestFlag("stop_spam_with_skill") - get_global_time()) % 60);
 		return false;
 	}
 #endif 
@@ -20,7 +20,9 @@ Add :
 #ifdef ENABLE_FIX_BOW_EXPLOIT
 	 if (GetWear(WEAR_WEAPON) && GetQuestFlag("stop_spam_with_skill") && get_global_time() < GetQuestFlag("stop_spam_with_skill"))
 	 {
-		ChatInfoTrans(("In %d secunde poti dezechipa arma."), (GetQuestFlag("stop_spam_with_skill") - get_global_time()) % 60);
+		ChatInfoTrans(("In %d sec you will can unequip your items."), (GetQuestFlag("stop_spam_with_skill") - get_global_time()) % 60);
+
+		 
 		return false;
 	 }
 	
